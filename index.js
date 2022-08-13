@@ -19,11 +19,11 @@ function generate(){
 }
 function check(){
   for (let i = 0; i < 15; i++) {
-    let num = (Math.floor(Math.random() * characters.length) + 1);
+    let num = Math.floor(Math.random() * characters.length);
     passOne.textContent += characters[num]
   }
   for (let i = 0; i < 15; i++) {
-    let num = (Math.floor(Math.random() * characters.length) + 1);
+    let num = Math.floor(Math.random() * characters.length);
     passTwo.textContent += characters[num]
   }
 }
